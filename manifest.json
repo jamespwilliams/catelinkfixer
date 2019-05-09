@@ -1,0 +1,16 @@
+{
+  "name": "CATE Link Fixer",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "Stops CATE from forcing popups for URLs in notes pages.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://cate.doc.ic.ac.uk/notes.cgi*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
